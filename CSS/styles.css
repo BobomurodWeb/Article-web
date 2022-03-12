@@ -1,0 +1,231 @@
+/* GLOBAL STYLES */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    font-weight:400;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 2px;
+    color: #222;
+}
+/* MAIN S
+\ECTION STYLES */
+.site-main {
+    width: 100%;
+    max-width: 1200px;
+    flex-grow: 1;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* HERO SECTION STYLES */
+.hero-section {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/left-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.hero-section-content {
+    width: 285px;
+}
+.hero-section-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;    
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.hero-section-link {
+    padding: 12px 24px;
+    background-color:#1e90ff;
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+}
+.hero-section-link:hover{
+    background-color:rgba(30, 144, 255, 0.8);;
+}
+.hero-section-link:active{
+    background: rgba(30, 144, 255, 0.6);
+}
+.hero-section-link-wrapper {
+    display: flex;
+}
+.hero-section-link-wrapper::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/star-icon.svg");
+    margin-right: 12px;
+}
+.hero-section-link-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*  VIDEOS SECTION STYLES */
+.section-videos {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 54px;
+    
+}
+.section-videos-title {
+    font-weight: 400;
+    line-height: 28.8px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+.section-videos-hr {
+    height: 1px;
+    background-color: #999;
+    border: none;
+    margin-bottom: 24px;
+}
+.section-videos-list {
+    list-style: none;
+    margin-bottom: 23px;
+}
+.section-videos-iteam {
+    display: flex;
+}
+.section-videos-iteam:not(:last-child){
+    margin-bottom: 10px;
+}
+.section-videos-iteam-img {
+    border-radius: 4px; 
+    object-fit: cover;
+    width: 160px;
+    height: 90px;
+}
+.section-videos-iteam-contain {
+    padding: 16px 0 0 16px;
+}
+.section-videos-iteam-title {
+    margin-bottom: 4px;
+}
+.section-videos-iteam-title a:hover{
+    color: #1E90FF;
+}
+.section-videos-iteam-title a:active{
+    color: rgba(30, 144, 255, 0.6);
+}
+.section-videos-iteam-title a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #222;
+    text-decoration: none;
+}
+.section-videos-iteam-contain-footer {
+    display: flex;
+    align-items: center;
+}
+.section-videos-iteam-times {
+    display: flex;
+    margin-right: 24.67px;
+    /* align-items: center; */
+
+}
+.times-icon {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+.time-text,
+.eys-text  {
+    font-family: 'Roboto Condensed' ,'Arial' ,'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: normal;
+    color: #888;
+}
+.section-videos-iteam-eys {
+    display: flex;
+    align-items: center;
+
+
+}
+.eys-icon {
+    width: 14.67px;
+    height: 10px;
+    margin-right: 5px;
+}
+.eys-text {
+    color: #666;
+}
+.section-videos-button{
+    width: 100%;
+    padding: 12px;
+    background-color: #1E90FF;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-family: 'Roboto Condensed' ,'Arial' ,'sans-serif';
+    font-weight:700px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #fff;
+}
+.section-videos-button:hover{
+    background: rgba(30, 144, 255, 0.8);
+}
+.section-videos-button:active{
+    background: rgba(30, 144, 255, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+/* RETINA MEDIA BACKGROUND */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .hero-section {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/left-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+}
